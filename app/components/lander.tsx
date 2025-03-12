@@ -6,6 +6,7 @@ import { FaArrowRight } from 'react-icons/fa';
 import { Links } from '../../utils/social-links';
 import { routes } from '../../utils/app-routes';
 import { Open_Sans } from 'next/font/google';
+import Image from 'next/image';
 
 const opensans = Open_Sans({ subsets: ["latin"] });
 
@@ -14,12 +15,14 @@ function Lander() {
     <div className={`flex flex-col items-start justify-center min-h-screen leading-relaxed text-black md:box-border md:w-1/2 md:pl-20 pl-14 md:fixed ${opensans.className}`}>
 
       {/* Profile Section */}
-      <img
-        src="./assets/Memoji1.png"
-        alt="Memoji"
+      <Image
+        src="/path/to/image.jpg"
+        alt="Description"
+        width={500}
+        height={300}
         className="block mb-6 rounded-full shadow-md size-32 md:size-16"
       />
-      <h1 className="text-4xl md:text-5xl">Hey, I'm</h1>
+      <h1 className="text-4xl md:text-5xl">Hey, I&apos;m</h1>
       <h1 className="text-4xl text-blue-500 md:text-6xl text-balance">
         Aaditya Panchal
       </h1>

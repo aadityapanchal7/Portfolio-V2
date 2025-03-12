@@ -1,8 +1,7 @@
 export const Projects = [
   {
     image: './assets/statoracle.png',
-    width: '230',
-    height: '',
+    width: 230,
     alt: 'Website_Image',
     title: 'Stat-Oracle',
     date: 'February 2024',
@@ -13,8 +12,7 @@ export const Projects = [
   },
   {
     image: './assets/AAU.png',
-    width: '230',
-    height: '',
+    width: 230,
     alt: 'Website_Image',
     title: 'AAU Fundraising',
     date: 'October 2024',
@@ -25,8 +23,7 @@ export const Projects = [
   },
   {
     image: './assets/Neuro_S.png',
-    width: '230',
-    height: '',
+    width: 230,
     alt: 'Website_Image',
     title: 'CortexPD',
     date: 'June 2024',
@@ -37,8 +34,7 @@ export const Projects = [
   },
   {
     image: './assets/RMA.png',
-    width: '240',
-    height: '',
+    width: 240,
     alt: 'Website_Image',
     title: 'Research Made Accessible',
     date: 'May 2024',
@@ -49,8 +45,7 @@ export const Projects = [
   },
   {
     image: './assets/Portfolio_S.png',
-    width: '300',
-    height: '',
+    width: 300,
     alt: 'Website_Image',
     title: 'This Website',
     date: 'June 2024',

@@ -3,6 +3,7 @@ import { Projects } from "../../utils/project-list";
 import { FiGithub } from "react-icons/fi";
 import { FaLink } from "react-icons/fa6";
 import { FaCode } from "react-icons/fa6";
+import Image from 'next/image';
 
 function ProjectCard() {
   return (
@@ -14,12 +15,11 @@ function ProjectCard() {
         >
           <div className="flex flex-wrap ">
             {/* Image */}
-            <img
+            <Image
               className="object-cover rounded-lg h-auto mb-5 shadow-lg"
               src={item.image}
               alt={item.alt}
               width={item.width}
-              height={item.height}
             />
 
             <div className="hidden md:flex md:flex-wrap">

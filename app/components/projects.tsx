@@ -9,8 +9,12 @@ function Projects() {
   return (
     <div className=' pt-14 md:min-h-screen' id='Projects'>
       <div className='sticky top-0 w-full py-2 text-xl font-medium text-blue-500 md:text-2xl lg:text-3xl bg-white/90'>
-        //Projects
+        {/* Projects */}
       </div>
+      <p>
+        {/* This is a comment */}
+        Here are some of the projects I have worked on.
+      </p>
       <ProjectCard />
       <footer className="bottom-0 flex justify-center w-full text-sm text-black text-center">
         <span className="mb-3">
