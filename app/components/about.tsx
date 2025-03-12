@@ -11,10 +11,10 @@ function About() {
       </div>
       <div className='mt-5 space-y-5 text-md font- md:text-xl xl:text-xl leading-relaxed'>
         <p>
-          hey I'm Aaditya, a {age} year old programmer currently in my sophomore year of high school. I have a passion for both technology, and public health. I love creating new projects and exploring how they can be applied to solve real-world problems.
+          hey I&apos;m Aaditya, a {age} year old programmer currently in my sophomore year of high school. I have a passion for both technology, and public health. I love creating new projects and exploring how they can be applied to solve real-world problems.
         </p>
         <p>
-         When I'm not not sitting at my desk, you can usually find me playing tennis, hanging out with friends, or working out! I enjoy networking, playing sports, and just having fun in life, feel free to reach out and we can have a chat!
+          When I&apos;m not not sitting at my desk, you can usually find me playing tennis, hanging out with friends, or working out! I enjoy networking, playing sports, and just having fun in life, feel free to reach out and we can have a chat!
         </p>
       </div>
     </div>
