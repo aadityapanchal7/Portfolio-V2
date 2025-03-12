@@ -1,7 +1,7 @@
 export const Experience = [
   {
     image: './assets/utaustin.webp',
-    width: '80',
+    width: 80,
     alt: 'Logo',
     Title: 'UT-Austin',
     Role: 'Research Assistant', 
@@ -10,7 +10,7 @@ export const Experience = [
   },
   {
     image: './assets/statoracle_logo.webp',
-    width: '80',
+    width: 80,
     alt: 'Logo',
     Title: 'Stat-Oracle',
     Role: 'Co-Head of Technology', 
@@ -19,7 +19,7 @@ export const Experience = [
   },
   {
     image: './assets/CortexPD.webp',
-    width: '80',
+    width: 80,
     alt: 'Logo',
     Title: 'CortexPD',
     Role: 'Frontend Dev', 
@@ -28,7 +28,7 @@ export const Experience = [
   },
   {
     image: './assets/AP-Visuals.png',
-    width: '80',
+    width: 80,
     alt: 'Logo',
     Title: 'AP-Visuals',
     Role: 'Founder', 

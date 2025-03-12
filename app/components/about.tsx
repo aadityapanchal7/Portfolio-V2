@@ -7,7 +7,7 @@ function About() {
   return (
     <div className='text-black lg:pb-24' id='About'>
       <div className='sticky top-0 w-full py-2 text-xl font-medium text-blue-500 md:text-2xl lg:text-3xl bg-white/90'>
-        //About
+        #About
       </div>
       <div className='mt-5 space-y-5 text-md font- md:text-xl xl:text-xl leading-relaxed'>
         <p>

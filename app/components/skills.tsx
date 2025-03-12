@@ -7,7 +7,7 @@ function Skills() {
     <div className=' pt-14 md:pt-0 lg:pb-20' id='Skills'>
 
       <div className='sticky top-0 w-full py-2 text-xl font-medium text-blue-500 md:text-2xl lg:text-3xl bg-white/90'>
-        {/* Skills */}
+        #Skills
       </div>
 
 
