@@ -1,5 +1,3 @@
-"use client";
-
 import React from "react";
 import { ReactTyped } from "react-typed";
 import { FaArrowRight } from "react-icons/fa";
@@ -7,7 +5,6 @@ import { Links } from "../../utils/social-links";
 import { routes } from "../../utils/app-routes";
 import { Open_Sans } from "next/font/google";
 import Image from "next/image";
-import Link from "next/link";
 
 const opensans = Open_Sans({ subsets: ["latin"] });
 
