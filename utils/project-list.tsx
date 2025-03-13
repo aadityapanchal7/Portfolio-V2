@@ -2,7 +2,7 @@ import { MdHeight } from "react-icons/md";
 
 export const Projects = [
   {
-    image: '/./assets/statoracle.png',
+    image: '/assets/statoracle.png',
     width: 230,
     height: 100,
     alt: 'Website_Image',
@@ -14,7 +14,7 @@ export const Projects = [
     Languages: ['React', 'TailwindCSS', 'Next.js',],
   },
   {
-    image: '/./assets/AAU.png',
+    image: '/assets/AAU.png',
     width: 230,
     height: 100,
     alt: 'Website_Image',
@@ -26,7 +26,7 @@ export const Projects = [
     Languages: ['React', 'TailwindCSS', 'Next.js',],
   },
   {
-    image: '/./assets/Neuro_S.png',
+    image: '/assets/Neuro_S.png',
     width: 230,
     height: 100,
     alt: 'Website_Image',
@@ -38,7 +38,7 @@ export const Projects = [
     Languages: ['React', 'TailwindCSS', 'Javascript',],
   },
   {
-    image: '/./assets/RMA.png',
+    image: '/assets/RMA.png',
     width: 240,
     height: 100,
     alt: 'Website_Image',
@@ -50,7 +50,7 @@ export const Projects = [
     Languages: ['Next.js', 'TailwindCSS', 'React',],
   },
   {
-    image: '/./assets/Portfolio_S.png',
+    image: '/assets/Portfolio_S.png',
     width: 300,
     height: 100,
     alt: 'Website_Image',

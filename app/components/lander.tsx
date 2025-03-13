@@ -17,7 +17,7 @@ function Lander() {
     >
       {/* Profile Section */}
       <Image
-        src="/./assets/Memoji1.png"
+        src="/assets/Memoji1.png"
         alt="Description"
         width={500}
         height={300}
