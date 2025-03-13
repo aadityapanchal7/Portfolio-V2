@@ -12,7 +12,7 @@ function Skills() {
 
 
       {/* Languages */}
-      <div className='mt-5 md:mt-16 '>
+      <div className='mt-5 md:mt-10 '>
         <div className='flex items-center'>
         <span className=' text-black'><IoChevronForwardOutline /></span>
           <div className='font-bold text-orange-600 '>

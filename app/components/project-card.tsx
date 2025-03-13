@@ -11,7 +11,7 @@ function ProjectCard() {
       {Projects.map((item, index) => (
         <div
           key={index}
-          className="flex flex-col items-start p-6 mb-6 overflow-hidden bg-white shadow-lg md:flex-row "
+          className="flex flex-col items-start p-6 mb-6 overflow-hidden hover:translate-y-2 transition-all duration-500 cursor-pointer bg-white shadow-lg md:flex-row "
         >
           <div className="flex flex-wrap ">
             {/* Image */}
@@ -20,6 +20,7 @@ function ProjectCard() {
               src={item.image}
               alt={item.alt}
               width={item.width}
+              height={item.height}
             />
 
             <div className="hidden md:flex md:flex-wrap">
