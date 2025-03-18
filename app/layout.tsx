@@ -26,6 +26,7 @@ export default function RootLayout({
         <meta property="og:description" content="Aaditya Panchal is a Software Engineer in his Sophomore year of high school with a passion for computational biology and web development." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://aadityapanchal.vercel.app" />
+        <link rel="icon" href="/assets/favicon.ico" />
       </head>
       <body
         className={`${opensans.className} antialiased`}
