@@ -28,7 +28,7 @@ export const socials = [
   { label: "github", url: "https://github.com/aadityapanchal7" },
   { label: "linkedin", url: "https://www.linkedin.com/in/aaditya-panchal-3968202b5/" },
   { label: "email", url: "mailto:aadityapanchal289@gmail.com" },
-  { label: "resume", url: "/assets/Aaditya_P_Resume.pdf" },
+  { label: "resume", url: "" },
 ];
 
 /* -- index / table of contents ---------------------------------------------
