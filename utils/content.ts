@@ -91,7 +91,7 @@ export const work = [
     company: "Seekir",
     url: "https://seekir.com",
     period: "5/2025 — 7/2025",
-    desc: "my very first venture, built a research matching platform for students to get research -- bootstrapped to 500+ users -- discontinued because we were 2 broke high schoolers ",
+    desc: "my very first venture, built a research matching platform for students to get research -- bootstrapped to 1000+ users -- discontinued because we were 2 broke high schoolers ",
   },
 ];
 
