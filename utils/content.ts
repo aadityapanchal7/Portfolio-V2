@@ -16,7 +16,7 @@
 export const name = "aaditya panchal";
 
 // the one-liner under your name. short. a little bold. lowercase.
-export const tagline = "16 · building startups & doing research · future san franciscan";
+export const tagline = "17 · building startups & doing research · future san franciscan";
 
 // playful touch: the last word of the hero line cycles through these.
 // keep them short, single words/phrases. first one is what shows on load.
@@ -49,7 +49,7 @@ export const sections = [
 --------------------------------------------------------------------------- */
 
 export const now = [
-  "currently on the summer coding & research grind",
+  "currently on the college app grind",
   "learning multimodal AI",
   "email me if you wanna work on cool stuff",
   // (what i'm listening to shows live below, via last.fm)
@@ -62,7 +62,7 @@ export const now = [
 --------------------------------------------------------------------------- */
 
 export const story = [
-  "about to be 17 and really passionate about building, whether it be startups or side projects ",
+  "17 and really passionate about building, whether it be startups or side projects ",
   "self taught myself how to code at 13 and its insane to see where it's taken me and how many incredible people i've met",
   "someday i see myself in san francisco going on side quests with people who also share my endeavor of changing the world :)", // <-- have fun here
 ];
@@ -73,18 +73,18 @@ export const story = [
 
 export const work = [
   {
+    role: "Software Engineering Intern",
+    company: "Equitle",
+    url: "https://equitle.com",
+    period: "6/2026 — now",
+    desc: "shipped a production agentic workflow system for an afore-backed, ai-native deal-origination platform -- a proactive scanner & platform-wide agent built on mastra with custom memory & context engineering -- full-stack react/next + python/node pipelines, live for real users",
+  },
+  {
     role: "Chief Technology Officer",
     company: "Max",
     url: "https://maxmaxmax.today",
     period: "3/2026 — now",
     desc: "built & shipped the technical infrastructure of a looksmaxxing app -- now on app store & featured on cbs news -- met some very cool people",
-  },
-  {
-    role: "Chief Technology Officer",
-    company: "Brainrot Battles",
-    url: "https://brainrotbattles.app",
-    period: "5/2026 — now",
-    desc: "in a world of people doing the most, do the complete opposite -- building a brainrot battle game, featuring 67 & tung tung sahur -- future unicorn",
   },
   {
     role: "Co-Founder, COO",
@@ -117,10 +117,17 @@ export const research = [
     desc: "built a digital ethnography platform for evolving attitudes toward AI in health -- in peer review @ PLOS Digital Health",
   },
   {
-    title: "under construction",
+    title: "PanCyto - A ViT Cytology Foundation Model Trained on a Corpus Spanning Diverse Cell Morphologies",
     org: "Levy Lab / Joshua Levy / Dartmouth University",
-    url: "https://edit-ai-program.github.io/edit-ai-internship/people/",
+    url: "https://edit-ai-program.github.io/virtual_conference_26/presenter_articles/cyto.html",
     period: "2026",
-    desc: "currently working under Joshua Levy under the EDIT-AI program @ Dartmouth University -- doing some cool stuff :) ",
+    desc: "trained a vision transformer on millions of single-cell cytology images -- 78.9% balanced accuracy on urine & cervical specimens against a 25% chance rate",
+  },
+  {
+    title: "Agents Catching Agents: Shortcut Cascades and Benchmark Gaming in Clinical Multi-Agent Systems",
+    org: "MIT Critical Data / Leo Celi / MIT",
+    url: "https://arxiv.org/abs/2608.03744",
+    period: "2026",
+    desc: "probed whether committees of llm agents can be gamed by shortcuts -- holdout agents adopted wrong majority answers 38% of the time -- accepted @ MICCAI workshop",
   },
 ];

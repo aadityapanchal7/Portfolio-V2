@@ -20,7 +20,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://aadityapanchal.com"),
   title: "Aaditya Panchal",
   description:
-    "Aaditya Panchal — 16-year-old builder & researcher. CTO of Max, founder of Seekir, research at Emory, MIT Critical Data & Dartmouth.",
+    "Aaditya Panchal — 17-year-old builder & researcher. CTO of Max, founder of Seekir, research at Emory, MIT Critical Data & Dartmouth.",
   keywords: [
     "Aaditya Panchal",
     "Aaditya Panchal portfolio",
@@ -33,11 +33,10 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Aaditya Panchal" }],
   alternates: { canonical: "/" },
-  icons: { icon: "/assets/favicon.ico" },
   openGraph: {
     title: "Aaditya Panchal",
     description:
-      "16-year-old builder & researcher — startups, AI research, and side quests.",
+      "17-year-old builder & researcher — startups, AI research, and side quests.",
     url: "https://aadityapanchal.com",
     siteName: "Aaditya Panchal",
     type: "website",
@@ -46,7 +45,7 @@ export const metadata: Metadata = {
     card: "summary",
     title: "Aaditya Panchal",
     description:
-      "16-year-old builder & researcher — startups, AI research, and side quests.",
+      "17-year-old builder & researcher — startups, AI research, and side quests.",
   },
 };
 
