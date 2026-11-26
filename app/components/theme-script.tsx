@@ -1,8 +1,8 @@
 export default function ThemeScript() {
   const script = `
     try {
-      const t = localStorage.getItem('theme') ||
-        (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      // white by default; dark only if the visitor picked it with the toggle
+      const t = localStorage.getItem('theme') || 'light';
       document.documentElement.classList.toggle('dark', t === 'dark');
     } catch(e) {}
   `;

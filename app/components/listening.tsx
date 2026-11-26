@@ -53,12 +53,12 @@ export default function Listening() {
 
   return (
     <div className="mt-5 flex items-center gap-3 border-t border-[var(--rule)] pt-4">
-      <span className="font-mono text-[11px] lowercase text-[var(--faint)]">
+      <span className="text-xs lowercase text-[var(--faint)]">
         {track?.nowPlaying ? "now playing" : "last played"}
       </span>
 
       {loading ? (
-        <span className="font-mono text-xs text-[var(--faint)]">loading…</span>
+        <span className="text-xs text-[var(--faint)]">loading…</span>
       ) : (
         <a
           href={track?.url}
@@ -83,15 +83,15 @@ export default function Listening() {
             <span className="flex items-center gap-2">
               {track?.nowPlaying && (
                 <span className="relative flex size-1.5 shrink-0">
-                  <span className="absolute inline-flex size-full animate-ping rounded-full bg-[var(--accent)] opacity-75" />
-                  <span className="relative inline-flex size-1.5 rounded-full bg-[var(--accent)]" />
+                  <span className="absolute inline-flex size-full animate-ping rounded-full bg-[var(--muted)] opacity-75" />
+                  <span className="relative inline-flex size-1.5 rounded-full bg-[var(--muted)]" />
                 </span>
               )}
-              <span className="truncate text-[15px] transition-colors group-hover:text-[var(--accent)]">
+              <span className="truncate text-[15px] underline decoration-transparent underline-offset-4 transition-colors group-hover:decoration-[var(--underline)]">
                 {track?.name}
               </span>
             </span>
-            <span className="block truncate font-mono text-[11px] text-[var(--muted)]">
+            <span className="block truncate text-xs text-[var(--muted)]">
               {track?.artist}
               {!track?.nowPlaying && track?.playedAt
                 ? ` · ${relativeTime(track.playedAt)}`

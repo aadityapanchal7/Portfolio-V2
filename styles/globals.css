@@ -1,29 +1,26 @@
 @import "tailwindcss";
 
-/* font variables come from next/font (see app/layout.tsx) */
+/* font variable comes from next/font (see app/layout.tsx) */
 @theme {
-  --font-serif: var(--font-newsreader), ui-serif, Georgia, serif;
-  --font-mono: var(--font-jetbrains), ui-monospace, "SF Mono", monospace;
+  --font-sans: var(--font-geist), Arial, sans-serif;
 }
 
 :root {
-  --bg: #faf8f3;
-  --fg: #1a1a17;
-  --muted: #6b6862;
-  --faint: #97938b;
-  --accent: #b85c2e;
-  --border: #e6e2d8;
-  --rule: #ded9cd;
+  --bg: #ffffff;
+  --fg: #292929;
+  --muted: #737373;
+  --faint: #a3a3a3;
+  --underline: #cccccc;
+  --rule: #ededed;
 }
 
 .dark {
-  --bg: #100f0d;
-  --fg: #eceae3;
-  --muted: #8a8780;
-  --faint: #5f5c55;
-  --accent: #e07a4a;
-  --border: #262420;
-  --rule: #211f1b;
+  --bg: #0a0a0a;
+  --fg: #e5e5e5;
+  --muted: #8f8f8f;
+  --faint: #5c5c5c;
+  --underline: #4a4a4a;
+  --rule: #1f1f1f;
 }
 
 html {
@@ -31,10 +28,13 @@ html {
 }
 
 body {
+  margin: 0;
   background-color: var(--bg);
   color: var(--fg);
-  font-family: var(--font-serif);
-  transition: background-color 0.3s ease, color 0.3s ease;
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
 }
 
 a {
@@ -42,77 +42,41 @@ a {
   text-decoration: none;
 }
 
-/* shared style for real (clickable-out) links: accent color + soft underline
-   that solidifies on hover, so it's obvious what's a link. */
+/* real links: same color as the text, light grey underline that darkens on hover */
 .link {
-  color: var(--accent);
+  color: inherit;
   text-decoration: underline;
-  text-decoration-color: color-mix(in srgb, var(--accent) 40%, transparent);
-  text-underline-offset: 3px;
+  text-decoration-color: var(--underline);
+  text-underline-offset: 4px;
   text-decoration-thickness: 1px;
-  transition: text-decoration-color 0.2s ease, opacity 0.2s ease;
+  transition: text-decoration-color 0.2s ease;
 }
 
 .link:hover {
-  text-decoration-color: var(--accent);
+  text-decoration-color: currentColor;
+}
+
+a:focus-visible {
+  outline: 2px solid var(--muted);
+  outline-offset: 4px;
+  border-radius: 2px;
 }
 
 ::selection {
-  background-color: var(--accent);
-  color: var(--bg);
+  background-color: var(--rule);
+  color: var(--fg);
 }
 
-/* a faint paper-grain wash so the background isn't dead flat */
-body::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  pointer-events: none;
-  z-index: 0;
-  opacity: 0.5;
-  background-image: radial-gradient(
-    var(--rule) 0.5px,
-    transparent 0.5px
-  );
-  background-size: 22px 22px;
-  mask-image: radial-gradient(ellipse at center, #000 30%, transparent 75%);
-  -webkit-mask-image: radial-gradient(ellipse at center, #000 30%, transparent 75%);
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
-/* dotted leader line for the index — the "....." between label and hint */
-.leader {
-  flex: 1;
-  border-bottom: 1px dotted var(--rule);
-  margin: 0 0.6rem;
-  transform: translateY(-3px);
-}
-
-@keyframes fade-up {
-  from {
-    opacity: 0;
-    transform: translateY(16px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.animate-fade-up {
-  animation: fade-up 0.5s ease forwards;
-}
-
-@keyframes blink {
-  0%, 49% { opacity: 1; }
-  50%, 100% { opacity: 0; }
-}
-
-.cursor-blink {
-  animation: blink 1.1s step-end infinite;
+.animate-fade-in {
+  animation: fade-in 0.4s ease forwards;
 }
 
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
-  .animate-fade-up { animation: none; }
-  .cursor-blink { animation: none; }
+  .animate-fade-in { animation: none; }
 }

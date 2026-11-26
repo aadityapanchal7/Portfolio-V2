@@ -5,10 +5,8 @@
    Tone to aim for: mostly calm + lowercase, then go bold/playful on the lines
    that matter (look for the // <-- have fun here notes).
 
-   The site is laid out like a field notebook: a numbered index up top, then
-   each section is a numbered page (00, 01, 02 ...). The `sections` array below
-   is the single source of truth for that numbering — reorder or rename here and
-   the index + page headers stay in sync automatically.
+   Layout is a single minimal column: name, links, then now / story / work /
+   research. Links with an empty url are hidden automatically.
 ============================================================================ */
 
 /* -- identity --------------------------------------------------------------- */
@@ -63,7 +61,7 @@ export const now = [
 
 export const story = [
   "17 and really passionate about building, whether it be startups or side projects ",
-  "self taught myself how to code at 13 and its insane to see where it's taken me and how many incredible people i've met",
+  "taught myself how to code at 13 and its insane to see where it's taken me and how many incredible people i've met",
   "someday i see myself in san francisco going on side quests with people who also share my endeavor of changing the world :)", // <-- have fun here
 ];
 
@@ -73,25 +71,25 @@ export const story = [
 
 export const work = [
   {
-    role: "Software Engineering Intern",
+    role: "Founding Engineer",
     company: "Equitle",
     url: "https://equitle.com",
     period: "6/2026 — now",
-    desc: "shipped a production agentic workflow system for an afore-backed, ai-native deal-origination platform -- a proactive scanner & platform-wide agent built on mastra with custom memory & context engineering -- full-stack react/next + python/node pipelines, live for real users",
+    desc: "built hawk, the agent that runs the whole platform, and a proactive deal scanner for an afore-backed, ai-native deal-origination platform -- mastra with custom memory & context engineering, live for real users",
   },
   {
     role: "Chief Technology Officer",
-    company: "Max",
-    url: "https://maxmaxmax.today",
+    company: "Superpower",
+    url: "https://apps.apple.com/us/app/superpower-optimize-your-body/id6761345332",
     period: "3/2026 — now",
-    desc: "built & shipped the technical infrastructure of a looksmaxxing app -- now on app store & featured on cbs news -- met some very cool people",
+    desc: "formerly the maxx app -- built & shipped the technical infrastructure -- now on the app store & featured on cbs mornings -- met some very cool people",
   },
   {
     role: "Co-Founder, COO",
     company: "Seekir",
     url: "https://seekir.com",
-    period: "5/2025 — 7/2025",
-    desc: "my very first venture, built a research matching platform for students to get research -- bootstrapped to 1000+ users -- discontinued because we were 2 broke high schoolers ",
+    period: "3/2025 — 8/2025",
+    desc: "my very first venture, built a research matching platform for students to get research -- grew to 500+ users -- shut it down after clones showed up",
   },
 ];
 
@@ -101,13 +99,26 @@ export const work = [
    `url` = link to paper/poster/repo (use "#" if none yet).
 --------------------------------------------------------------------------- */
 
-export const research = [
+export const research: {
+  title: string;
+  org: string;
+  url?: string;
+  period: string;
+  desc: string;
+  links?: { label: string; url: string }[];
+}[] = [
+  {
+    title: "Automated Bile Duct Brushing Cytology Classification Using Deep Learning–Based Cell Cluster Analysis",
+    org: "Levy Lab / Joshua Levy / Dartmouth Health",
+    period: "2027",
+    desc: "co-author -- accepted for a platform talk @ USCAP 2027, vancouver",
+  },
   {
     title: "Characterizing a Digital Cohort of Parkinsons Patients via NLP",
     org: "Sarker Lab / Abeed Sarker / Emory University",
     url: "https://amia.secure-platform.com/symposium/gallery/rounds/82021/details/24118",
     period: "2025",
-    desc: "extracted 10,000+ rows of reddit data & built NLP pipelines to create viable digital cohorts -- presented @ AMIA 2025",
+    desc: "built nlp pipelines on ~9,600 reddit posts to create viable digital cohorts -- first author, oral presentation @ AMIA 2025",
   },
   {
     title: "“Voices of AI in Medicine” - Building a Digital Ethnography Platform for Evolving Attitudes Toward AI in Health",
@@ -118,16 +129,17 @@ export const research = [
   },
   {
     title: "PanCyto - A ViT Cytology Foundation Model Trained on a Corpus Spanning Diverse Cell Morphologies",
-    org: "Levy Lab / Joshua Levy / Dartmouth University",
+    org: "Levy Lab / Joshua Levy / Dartmouth Health",
     url: "https://edit-ai-program.github.io/virtual_conference_26/presenter_articles/cyto.html",
     period: "2026",
-    desc: "trained a vision transformer on millions of single-cell cytology images -- 78.9% balanced accuracy on urine & cervical specimens against a 25% chance rate",
+    desc: "built the slide pipeline for 5 specimen types & pretrained a dinov3 vit on urine cytology -- 78.9% balanced accuracy on urine specimens against a 25% chance rate -- keynote @ edit ai 2026",
   },
   {
     title: "Agents Catching Agents: Shortcut Cascades and Benchmark Gaming in Clinical Multi-Agent Systems",
     org: "MIT Critical Data / Leo Celi / MIT",
-    url: "https://arxiv.org/abs/2608.03744",
+    url: "https://papers.miccai.org/miccai-2026-sat/MedAgent_040.html",
     period: "2026",
-    desc: "probed whether committees of llm agents can be gamed by shortcuts -- holdout agents adopted wrong majority answers 38% of the time -- accepted @ MICCAI workshop",
+    desc: "probed whether committees of llm agents can be gamed by shortcuts -- holdout agents adopted wrong majority answers 38% of the time -- accepted @ MICCAI 2026 AgenticMed workshop & AgentEvalSci 2026",
+    links: [{ label: "arxiv", url: "https://arxiv.org/abs/2608.03744" }],
   },
 ];

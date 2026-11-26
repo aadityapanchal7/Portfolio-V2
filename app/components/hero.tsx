@@ -3,8 +3,7 @@
 import { useEffect, useState } from "react";
 import { name, tagline, cyclingWords, socials } from "../../utils/content";
 
-// the tagline ends on a word that swaps every couple seconds, with a blinking
-// cursor after it. if cyclingWords is empty we just show the plain tagline.
+// the tagline ends on a word that swaps every couple seconds. if cyclingWords is empty we just show the plain tagline.
 function CyclingTagline() {
   const [i, setI] = useState(0);
 
@@ -26,27 +25,26 @@ function CyclingTagline() {
   return (
     <span>
       {prefix ? prefix + " " : ""}
-      <span key={i} className="animate-fade-up text-[var(--fg)] font-medium">
+      <span key={i} className="animate-fade-in text-[var(--fg)] font-medium">
         {cyclingWords[i]}
       </span>
-      <span className="cursor-blink text-[var(--accent)]">_</span>
     </span>
   );
 }
 
 export default function Hero() {
   return (
-    <header className="relative z-10">
-      <h1 className="text-3xl font-semibold tracking-tight lowercase">{name}</h1>
+    <header>
+      <h1 className="text-[22px] leading-[1.3] font-medium tracking-[-0.6px] lowercase">{name}</h1>
 
       {(tagline || cyclingWords.length > 0) && (
-        <p className="mt-3 text-lg text-[var(--muted)] lowercase">
+        <p className="mt-2 text-[var(--muted)] lowercase">
           <CyclingTagline />
         </p>
       )}
 
-      <nav className="mt-5 flex flex-wrap gap-x-5 gap-y-1 font-mono text-[13px]">
-        {socials.map((s) => (
+      <nav className="mt-4 flex flex-wrap gap-x-[22px] gap-y-1 text-[15px]">
+        {socials.filter((s) => s.url).map((s) => (
           <a
             key={s.label}
             href={s.url}

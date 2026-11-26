@@ -1,18 +1,13 @@
 import type { Metadata } from "next";
 import "../styles/globals.css";
-import { Newsreader, JetBrains_Mono } from "next/font/google";
+import { Geist } from "next/font/google";
 import ThemeScript from "./components/theme-script";
 import ThemeToggle from "./components/theme-toggle";
 
-const newsreader = Newsreader({
+const geist = Geist({
   subsets: ["latin"],
-  variable: "--font-newsreader",
-  display: "swap",
-});
-
-const jetbrains = JetBrains_Mono({
-  subsets: ["latin"],
-  variable: "--font-jetbrains",
+  weight: ["400", "500", "600"],
+  variable: "--font-geist",
   display: "swap",
 });
 
@@ -20,15 +15,15 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://aadityapanchal.com"),
   title: "Aaditya Panchal",
   description:
-    "Aaditya Panchal — 17-year-old builder & researcher. CTO of Max, founder of Seekir, research at Emory, MIT Critical Data & Dartmouth.",
+    "Aaditya Panchal — 17-year-old builder & researcher. CTO of Superpower, co-founder of Seekir, research at Emory, MIT Critical Data & Dartmouth Health.",
   keywords: [
     "Aaditya Panchal",
     "Aaditya Panchal portfolio",
     "Aaditya Panchal builder",
     "Aaditya Panchal research",
-    "founder",
+    "co-founder",
     "AI research",
-    "Max",
+    "Superpower",
     "Seekir",
   ],
   authors: [{ name: "Aaditya Panchal" }],
@@ -58,7 +53,7 @@ export default function RootLayout({
     <html
       lang="en"
       suppressHydrationWarning
-      className={`${newsreader.variable} ${jetbrains.variable}`}
+      className={geist.variable}
     >
       <head>
         <ThemeScript />

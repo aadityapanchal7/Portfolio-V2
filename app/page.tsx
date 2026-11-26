@@ -8,21 +8,18 @@ import Research from "./components/research";
 
 export default function Page() {
   return (
-    <main className="relative mx-auto max-w-[620px] px-6 py-20 sm:py-28">
+    <main className="mx-auto max-w-[600px] px-6 pt-14 pb-[72px] sm:pt-[100px]">
       <Analytics />
 
       <Hero />
+      <Now />
+      <Story />
+      <Work />
+      <Research />
 
-      <div className="relative z-10">
-        <Now />
-        <Story />
-        <Work />
-        <Research />
-
-        <footer className="mt-20 border-t border-[var(--rule)] pt-5 font-mono text-xs text-[var(--faint)]">
-          &copy; {new Date().getFullYear()} {name}
-        </footer>
-      </div>
+      <footer className="mt-16 text-sm text-[var(--muted)]">
+        &copy; {new Date().getFullYear()} {name}
+      </footer>
     </main>
   );
 }
