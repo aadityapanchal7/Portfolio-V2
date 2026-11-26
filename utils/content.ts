@@ -14,7 +14,7 @@
 export const name = "aaditya panchal";
 
 // the one-liner under your name. short. a little bold. lowercase.
-export const tagline = "17 · building startups & doing research · future san franciscan";
+export const tagline = "17 · building startups & doing research";
 
 // playful touch: the last word of the hero line cycles through these.
 // keep them short, single words/phrases. first one is what shows on load.
