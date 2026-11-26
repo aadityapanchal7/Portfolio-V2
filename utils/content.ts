@@ -87,7 +87,7 @@ export const work = [
   {
     role: "Co-Founder, COO",
     company: "Seekir",
-    url: "https://seekir.com",
+    url: "https://seekir.org",
     period: "3/2025 — 8/2025",
     desc: "my very first venture, built a research matching platform for students to get research -- grew to 500+ users -- shut it down after clones showed up",
   },
